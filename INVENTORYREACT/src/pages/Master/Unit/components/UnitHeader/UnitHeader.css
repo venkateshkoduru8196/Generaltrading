@@ -1,0 +1,312 @@
+/*==========================================================
+  Card
+==========================================================*/
+
+.unit-header-card {
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0,0,0,.08);
+
+    margin-bottom: 20px;
+
+}
+
+
+/*==========================================================
+  Title
+==========================================================*/
+
+.unit-header-title {
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 54px;
+
+}
+
+
+/*==========================================================
+  Title Content
+==========================================================*/
+
+.unit-title-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+
+/*==========================================================
+  Unit Icon Wrapper
+==========================================================*/
+
+.unit-header-icon-wrapper {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: rgba(255,255,255,.15);
+
+}
+
+
+/*==========================================================
+  Unit Icon
+==========================================================*/
+
+.unit-header-icon {
+
+    display: block;
+
+    width: 24px;
+
+    height: 24px;
+
+    font-size: 24px;
+
+    color: #facc15;
+
+    fill: #facc15;
+
+    flex-shrink: 0;
+
+    filter:
+        drop-shadow(
+            0 2px 3px
+            rgba(0,0,0,.30)
+        );
+
+}
+
+
+/*==========================================================
+  Title Text
+==========================================================*/
+
+.unit-header-title h3 {
+
+    margin: 0;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: .8px;
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    line-height: 1;
+
+}
+
+
+/*==========================================================
+  Body
+==========================================================*/
+
+.unit-header-body {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        2fr;
+
+    gap: 16px;
+
+    align-items: end;
+
+    padding: 18px 20px;
+
+}
+
+
+/*==========================================================
+  Form Group
+==========================================================*/
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+/*==========================================================
+  Labels
+==========================================================*/
+
+.form-group label {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #374151;
+
+    margin-bottom: 6px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .3px;
+
+}
+
+
+.form-group label span {
+
+    color: #dc2626;
+
+}
+
+
+/*==========================================================
+  Inputs
+==========================================================*/
+
+.form-group input {
+
+    height: 36px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    background: #ffffff;
+
+    transition: .25s;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+}
+
+
+.form-group input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37,99,235,.12);
+
+}
+
+
+.form-group input:disabled {
+
+    background: #f8fafc;
+
+    color: #374151;
+
+    cursor: not-allowed;
+
+}
+
+
+/*==========================================================
+  Responsive
+==========================================================*/
+
+@media(max-width:768px) {
+
+    .unit-header-title {
+
+        height: 48px;
+
+    }
+
+
+    .unit-title-content {
+
+        gap: 8px;
+
+    }
+
+
+    .unit-header-icon-wrapper {
+
+        width: 30px;
+
+        height: 30px;
+
+    }
+
+
+    .unit-header-icon {
+
+        width: 20px;
+
+        height: 20px;
+
+        font-size: 20px;
+
+    }
+
+
+    .unit-header-title h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .unit-header-body {
+
+        grid-template-columns: 1fr;
+
+        padding: 16px;
+
+        gap: 14px;
+
+    }
+
+
+    .form-group input {
+
+        height: 34px;
+
+    }
+
+}

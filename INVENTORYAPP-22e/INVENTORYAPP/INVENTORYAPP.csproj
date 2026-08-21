@@ -1,0 +1,104 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Controllers\**" />
+	  <Compile Remove="Extensions\CorsExtensions\**" />
+	  <Compile Remove="Extensions\NewFolder\**" />
+	  <Compile Remove="Features\Masters\Accounts\Mapping\**" />
+	  <Compile Remove="Features\Masters\Item\**" />
+	  <Compile Remove="Features\Masters\StockItems\NewFolder\**" />
+	  <Compile Remove="Features\Sales\Export\NewFolder\**" />
+	  <Compile Remove="Features\Shared\DocumentNumbers\Repositories\NewFolder\**" />
+	  <Compile Remove="Models\NewFolder\**" />
+	  <Compile Remove="Repositories\**" />
+	  <Compile Remove="Services\**" />
+	  <Content Remove="Controllers\**" />
+	  <Content Remove="Extensions\CorsExtensions\**" />
+	  <Content Remove="Extensions\NewFolder\**" />
+	  <Content Remove="Features\Masters\Accounts\Mapping\**" />
+	  <Content Remove="Features\Masters\Item\**" />
+	  <Content Remove="Features\Masters\StockItems\NewFolder\**" />
+	  <Content Remove="Features\Sales\Export\NewFolder\**" />
+	  <Content Remove="Features\Shared\DocumentNumbers\Repositories\NewFolder\**" />
+	  <Content Remove="Models\NewFolder\**" />
+	  <Content Remove="Repositories\**" />
+	  <Content Remove="Services\**" />
+	  <EmbeddedResource Remove="Controllers\**" />
+	  <EmbeddedResource Remove="Extensions\CorsExtensions\**" />
+	  <EmbeddedResource Remove="Extensions\NewFolder\**" />
+	  <EmbeddedResource Remove="Features\Masters\Accounts\Mapping\**" />
+	  <EmbeddedResource Remove="Features\Masters\Item\**" />
+	  <EmbeddedResource Remove="Features\Masters\StockItems\NewFolder\**" />
+	  <EmbeddedResource Remove="Features\Sales\Export\NewFolder\**" />
+	  <EmbeddedResource Remove="Features\Shared\DocumentNumbers\Repositories\NewFolder\**" />
+	  <EmbeddedResource Remove="Models\NewFolder\**" />
+	  <EmbeddedResource Remove="Repositories\**" />
+	  <EmbeddedResource Remove="Services\**" />
+	  <None Remove="Controllers\**" />
+	  <None Remove="Extensions\CorsExtensions\**" />
+	  <None Remove="Extensions\NewFolder\**" />
+	  <None Remove="Features\Masters\Accounts\Mapping\**" />
+	  <None Remove="Features\Masters\Item\**" />
+	  <None Remove="Features\Masters\StockItems\NewFolder\**" />
+	  <None Remove="Features\Sales\Export\NewFolder\**" />
+	  <None Remove="Features\Shared\DocumentNumbers\Repositories\NewFolder\**" />
+	  <None Remove="Models\NewFolder\**" />
+	  <None Remove="Repositories\**" />
+	  <None Remove="Services\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+
+		<PackageReference Include="DocX" Version="5.2.0" />
+
+		<PackageReference Include="EPPlus" Version="8.6.1" />
+
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+
+		<PackageReference Include="itext.bouncy-castle-adapter" Version="9.6.0" />
+
+		<PackageReference Include="itext7" Version="9.6.0" />
+
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
+
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+
+
+
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.1.0" />
+
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.1.0" />
+
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Features\Authentication\Mapping\" />
+	  <Folder Include="Features\Authentication\Repositories\" />
+	  <Folder Include="Features\Authentication\Validators\" />
+	  <Folder Include="Features\Authorization-menu\Mapping\" />
+	  <Folder Include="Features\Authorization-menu\Validators\" />
+	  <Folder Include="Features\Reports\BusinessReport\Mapping\" />
+	  <Folder Include="Features\Reports\BusinessReport\Validators\" />
+	  <Folder Include="Features\Shared\DocumentNumbers\Controllers\DTOs\" />
+	  <Folder Include="Features\Shared\DocumentNumbers\DTOs\" />
+	  <Folder Include="Shared\Text\" />
+	</ItemGroup>
+
+</Project>

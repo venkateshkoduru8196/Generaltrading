@@ -1,0 +1,182 @@
+/*==========================================================
+  PAGINATION
+==========================================================*/
+
+.admin-pagination {
+
+    min-height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 10px 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-top: 0;
+
+    border-radius: 0 0 12px 12px;
+}
+
+
+/*==========================================================
+  INFO
+==========================================================*/
+
+.admin-pagination-info {
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+.admin-pagination-info strong {
+
+    color: #334155;
+
+    font-weight: 600;
+}
+
+
+/*==========================================================
+  CONTROLS
+==========================================================*/
+
+.admin-pagination-controls {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+
+.admin-page-size {
+
+    height: 34px;
+
+    margin-right: 8px;
+
+    padding: 0 8px;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 12px;
+
+    outline: none;
+}
+
+
+.admin-pagination-controls button {
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+.admin-pagination-controls button:hover:not(:disabled) {
+
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+}
+
+
+.admin-pagination-controls button.active {
+
+    background: #2563eb;
+
+    border-color: #2563eb;
+
+    color: #ffffff;
+}
+
+
+.admin-pagination-controls button:disabled {
+
+    opacity: .45;
+
+    cursor: not-allowed;
+}
+
+
+.admin-page-ellipsis {
+
+    width: 28px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/*==========================================================
+  RESPONSIVE
+==========================================================*/
+
+@media (max-width: 650px) {
+
+    .admin-pagination {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .admin-pagination-controls {
+
+        width: 100%;
+
+        justify-content: flex-end;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .admin-page-size {
+
+        display: none;
+    }
+
+}

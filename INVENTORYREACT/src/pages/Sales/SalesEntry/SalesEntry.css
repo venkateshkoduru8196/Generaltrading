@@ -1,0 +1,321 @@
+/*==========================================
+    Sales Entry
+==========================================*/
+
+.sales-entry{
+
+    width:100%;
+
+    max-width:1600px;
+
+    margin:auto;
+
+    padding:24px;
+
+    background:#f8fafc;
+
+    min-height:100vh;
+
+    box-sizing:border-box;
+
+}
+
+/*==========================================
+    Loading
+==========================================*/
+
+.loading{
+
+    padding:12px;
+
+    margin-bottom:20px;
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+/*==========================================
+    Error
+==========================================*/
+
+.error-message{
+
+    padding:12px;
+
+    margin-bottom:20px;
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================================
+    Laptop
+==========================================*/
+
+@media(max-width:1200px){
+
+.sales-entry{
+
+padding:20px;
+
+}
+
+}
+
+/*==========================================
+    Tablet
+==========================================*/
+
+@media(max-width:768px){
+
+.sales-entry{
+
+padding:16px;
+
+}
+
+}
+
+/*==========================================
+    Mobile
+==========================================*/
+
+@media(max-width:576px){
+
+.sales-entry{
+
+padding:12px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================================*
+* SALES PAGE TITLE
+*==========================================*/
+
+.sales-page-title {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 18px 20px;
+
+    margin-bottom: 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04);
+
+    box-sizing: border-box;
+}
+
+
+/*==========================================*
+* ICON
+*==========================================*/
+
+.sales-page-title-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    border-radius: 10px;
+
+    font-size: 24px;
+
+    line-height: 1;
+
+    box-shadow:
+        0 4px 10px
+        rgba(37, 99, 235, 0.20);
+
+    flex-shrink: 0;
+}
+
+
+/*==========================================*
+* TITLE
+*==========================================*/
+
+.sales-page-title h1 {
+
+    margin: 0;
+
+    color: #1e3a8a;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: 0.2px;
+}
+
+
+/*==========================================*
+* LAPTOP
+*==========================================*/
+
+@media (max-width: 1200px) {
+
+    .sales-page-title {
+
+        padding: 16px 18px;
+
+        margin-bottom: 22px;
+    }
+
+    .sales-page-title-icon {
+
+        width: 44px;
+
+        height: 44px;
+
+        font-size: 23px;
+    }
+
+    .sales-page-title h1 {
+
+        font-size: 26px;
+    }
+
+}
+
+
+/*==========================================*
+* TABLET
+*==========================================*/
+
+@media (max-width: 768px) {
+
+    .sales-page-title {
+
+        gap: 10px;
+
+        padding: 14px 16px;
+
+        margin-bottom: 20px;
+
+        border-radius: 10px;
+    }
+
+    .sales-page-title-icon {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 21px;
+
+        border-radius: 9px;
+    }
+
+    .sales-page-title h1 {
+
+        font-size: 23px;
+    }
+
+}
+
+
+/*==========================================*
+* MOBILE
+*==========================================*/
+
+@media (max-width: 576px) {
+
+    .sales-page-title {
+
+        gap: 8px;
+
+        padding: 12px;
+
+        margin-bottom: 16px;
+    }
+
+    .sales-page-title-icon {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 19px;
+
+        border-radius: 8px;
+    }
+
+    .sales-page-title h1 {
+
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+

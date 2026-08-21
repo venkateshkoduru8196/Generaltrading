@@ -1,0 +1,32 @@
+.receipt-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.receipt-btn {
+  min-width: 82px;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.receipt-btn-new { background: #64748b; }
+.receipt-btn-save { background: #16a34a; }
+.receipt-btn-edit { background: #2563eb; }
+.receipt-btn-update { background: #0891b2; }
+.receipt-btn-delete { background: #dc2626; }
+.receipt-btn-print { background: #475569; }
+
+.receipt-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media print {
+  .receipt-buttons { display: none; }
+}

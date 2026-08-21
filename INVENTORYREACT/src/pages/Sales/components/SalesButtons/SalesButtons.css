@@ -1,0 +1,234 @@
+.sales-buttons {
+
+    margin-top: 20px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+.btn {
+
+    padding: 10px 22px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.btn:hover {
+
+    opacity: 0.9;
+
+}
+
+.btn-new {
+
+    background: #6c757d;
+
+}
+
+.btn-save {
+
+    background: #198754;
+
+}
+
+.btn-update {
+
+    background: #0d6efd;
+
+}
+
+
+.btn-edit {
+
+    background: yellowgreen;
+
+}
+
+.btn-delete {
+
+    background: #dc3545;
+
+}
+
+.btn-search {
+
+    background: #fd7e14;
+
+}
+
+.btn-print {
+
+    background: #6f42c1;
+
+}
+
+
+.btn:disabled {
+    background: #d1d5db !important;
+    color: #6b7280;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+
+
+/*==========================================*
+*DOWNLOAD DROPDOWN
+*==========================================*/
+
+.download-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/*==========================================*
+*DOWNLOAD BUTTON
+*==========================================*/
+
+.btn-download {
+  background: #0f766e;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.btn-download:hover {
+  background: #0d9488;
+}
+
+
+/*==========================================*
+*ARROW
+*==========================================*/
+
+.dropdown-arrow {
+  font-size: 10px;
+
+  display: inline-block;
+
+  transition: transform 0.2s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+
+/*==========================================*
+*DROPDOWN MENU
+*==========================================*/
+
+.download-menu {
+  position: absolute;
+
+  right: 0;
+
+  bottom: calc(100% + 8px);
+
+  min-width: 170px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 10px 25px
+    rgba(0, 0, 0, 0.15);
+
+  padding: 6px;
+
+  z-index: 1000;
+}
+
+
+/*==========================================*
+*MENU ITEM
+*==========================================*/
+
+.download-menu-item {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 12px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.download-menu-item:hover {
+  background: #eff6ff;
+
+  color: #1d4ed8;
+}
+
+
+/*==========================================*
+*ICON
+*==========================================*/
+
+.download-icon {
+  width: 24px;
+
+  text-align: center;
+
+  font-size: 16px;
+}
+
+
+/*==========================================*
+*DISABLED
+*==========================================*/
+
+.btn-download:disabled {
+  background: #d1d5db !important;
+
+  color: #6b7280;
+
+  cursor: not-allowed;
+}

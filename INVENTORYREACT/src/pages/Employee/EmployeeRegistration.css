@@ -1,0 +1,857 @@
+/* =========================================================
+   EMPLOYEE REGISTRATION PAGE
+   ========================================================= */
+
+.employee-registration-page {
+    min-height: 100vh;
+    width: 100%;
+
+    background: #f5f7fb;
+
+    padding: 32px 24px 40px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.employee-registration-container {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.employee-registration-header {
+    margin-bottom: 22px;
+}
+
+.employee-title-wrapper {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.employee-title-icon {
+    width: 58px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #0f766e,
+        #0891b2
+    );
+
+    box-shadow:
+        0 8px 20px rgba(8, 145, 178, 0.20);
+}
+
+.employee-title-icon span {
+    font-size: 27px;
+}
+
+.employee-title-wrapper h1 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 27px;
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    letter-spacing: -0.35px;
+}
+
+.employee-title-wrapper p {
+    margin: 6px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.employee-registration-card {
+    background: #ffffff;
+
+    border: 1px solid #e6eaf0;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 28px rgba(15, 23, 42, 0.06);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   FORM SECTION
+   ========================================================= */
+
+.employee-form-section {
+    padding: 30px 34px;
+}
+
+.employee-form-section
++ .employee-form-section {
+    border-top: 1px solid #edf0f4;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.employee-section-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 24px;
+}
+
+.employee-section-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+}
+
+.employee-section-icon.account {
+    background: #ecfeff;
+}
+
+.employee-section-icon.security {
+    background: #f0fdfa;
+}
+
+.employee-section-icon span {
+    font-size: 19px;
+}
+
+.employee-section-heading h2 {
+    margin: 0;
+
+    color: #1f2937;
+
+    font-size: 17px;
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+.employee-section-heading p {
+    margin: 4px 0 0;
+
+    color: #7a8494;
+
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   FORM GRID
+   ========================================================= */
+
+.employee-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px 22px;
+}
+
+
+/* =========================================================
+   FIELD
+   ========================================================= */
+
+.employee-field {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-field label {
+    margin-bottom: 8px;
+
+    color: #374151;
+
+    font-size: 13px;
+    line-height: 1.4;
+
+    font-weight: 600;
+}
+
+.employee-field label span {
+    margin-left: 4px;
+
+    color: #dc2626;
+}
+
+
+/* =========================================================
+   INPUT WRAPPER
+   ========================================================= */
+
+.employee-input-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+.employee-input-icon {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.employee-input-wrapper input {
+    width: 100%;
+    height: 46px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #1f2937;
+
+    padding: 0 42px 0 43px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease;
+}
+
+.employee-input-wrapper input::placeholder {
+    color: #a1a9b6;
+}
+
+.employee-input-wrapper input:hover {
+    border-color: #b8c1cf;
+}
+
+.employee-input-wrapper input:focus {
+    border-color: #0891b2;
+
+    box-shadow:
+        0 0 0 3px rgba(8, 145, 178, 0.10);
+
+    background: #ffffff;
+}
+
+.employee-input-wrapper input:disabled {
+    background: #f5f6f8;
+
+    color: #8b94a3;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   PASSWORD TOGGLE
+   ========================================================= */
+
+.employee-password-toggle {
+    position: absolute;
+
+    right: 9px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 34px;
+    height: 34px;
+
+    border: 0;
+
+    border-radius: 7px;
+
+    background: transparent;
+
+    color: #64748b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition:
+        background 0.18s ease,
+        color 0.18s ease;
+}
+
+.employee-password-toggle:hover {
+    background: #f1f5f9;
+
+    color: #0891b2;
+}
+
+.employee-password-toggle:disabled {
+    cursor: not-allowed;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================================
+   FIELD HELP
+   ========================================================= */
+
+.employee-field-help {
+    margin-top: 6px;
+
+    color: #7b8492;
+
+    font-size: 11.5px;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   SECURITY NOTE
+   ========================================================= */
+
+.employee-security-note {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: 24px;
+
+    padding: 14px 16px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+}
+
+.employee-security-note-icon {
+    width: 26px;
+    height: 26px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.employee-security-note strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #334155;
+
+    font-size: 12.5px;
+}
+
+.employee-security-note p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 11.5px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.employee-alert {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid;
+
+    position: relative;
+}
+
+.employee-alert-error {
+    background: #fff7f7;
+
+    border-color: #fecaca;
+
+    color: #991b1b;
+}
+
+.employee-alert-success {
+    background: #f4fdf7;
+
+    border-color: #bbf7d0;
+
+    color: #166534;
+}
+
+.employee-alert-icon {
+    width: 27px;
+    height: 27px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.employee-alert-error
+.employee-alert-icon {
+    background: #fee2e2;
+
+    color: #b91c1c;
+}
+
+.employee-alert-success
+.employee-alert-icon {
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+.employee-alert-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+
+    padding-right: 20px;
+}
+
+.employee-alert-content strong {
+    font-size: 12.5px;
+}
+
+.employee-alert-content span {
+    font-size: 12px;
+
+    line-height: 1.45;
+}
+
+.employee-alert-close {
+    position: absolute;
+
+    top: 9px;
+    right: 10px;
+
+    width: 27px;
+    height: 27px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #64748b;
+
+    font-size: 19px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+}
+
+.employee-alert-close:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+   ========================================================= */
+
+.employee-form-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 20px 34px;
+
+    background: #fafbfc;
+
+    border-top: 1px solid #edf0f4;
+}
+
+
+/* =========================================================
+   CANCEL
+   ========================================================= */
+
+.employee-cancel-btn {
+    min-width: 100px;
+    height: 44px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 0 18px;
+
+    border: 1px solid #d7dde6;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        background 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+.employee-cancel-btn:hover {
+    background: #f8fafc;
+
+    border-color: #c4ccd8;
+
+    color: #1f2937;
+}
+
+
+/* =========================================================
+   SUBMIT
+   ========================================================= */
+
+.employee-submit-btn {
+    min-width: 185px;
+    height: 44px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 20px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: #0891b2;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 10px rgba(8, 145, 178, 0.16);
+
+    transition:
+        background 0.18s ease,
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.employee-submit-btn:hover:not(:disabled) {
+    background: #0e7490;
+
+    box-shadow:
+        0 6px 14px rgba(8, 145, 178, 0.20);
+
+    transform: translateY(-1px);
+}
+
+.employee-submit-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.employee-submit-btn:disabled {
+    background: #94a3b8;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+.employee-submit-icon {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SPINNER
+   ========================================================= */
+
+.employee-spinner {
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid rgba(255, 255, 255, 0.35);
+
+    border-top-color: #ffffff;
+
+    border-radius: 50%;
+
+    animation:
+        employee-spin 0.75s linear infinite;
+}
+
+@keyframes employee-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.employee-page-footer {
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .employee-registration-page {
+        padding: 25px 18px 35px;
+    }
+
+    .employee-form-section {
+        padding: 26px 25px;
+    }
+
+    .employee-form-actions {
+        padding: 18px 25px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .employee-registration-page {
+        padding: 20px 12px 30px;
+    }
+
+    .employee-title-wrapper {
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+    .employee-title-icon {
+        width: 48px;
+        height: 48px;
+
+        border-radius: 12px;
+    }
+
+    .employee-title-icon span {
+        font-size: 22px;
+    }
+
+    .employee-title-wrapper h1 {
+        font-size: 21px;
+    }
+
+    .employee-title-wrapper p {
+        font-size: 12px;
+    }
+
+    .employee-registration-card {
+        border-radius: 13px;
+    }
+
+    .employee-form-section {
+        padding: 22px 17px;
+    }
+
+    .employee-form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .employee-section-heading {
+        margin-bottom: 20px;
+    }
+
+    .employee-section-heading h2 {
+        font-size: 15px;
+    }
+
+    .employee-section-heading p {
+        font-size: 11.5px;
+    }
+
+    .employee-form-actions {
+        flex-direction: column-reverse;
+
+        padding: 17px;
+    }
+
+    .employee-cancel-btn,
+    .employee-submit-btn {
+        width: 100%;
+    }
+
+    .employee-security-note {
+        padding: 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .employee-registration-page {
+        padding: 15px 9px 25px;
+    }
+
+    .employee-title-wrapper h1 {
+        font-size: 19px;
+    }
+
+    .employee-title-wrapper p {
+        font-size: 11px;
+    }
+
+    .employee-form-section {
+        padding: 19px 13px;
+    }
+
+    .employee-form-actions {
+        padding: 14px;
+    }
+}

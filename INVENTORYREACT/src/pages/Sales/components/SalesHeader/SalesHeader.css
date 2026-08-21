@@ -1,0 +1,183 @@
+/*==========================================
+        SALES HEADER
+==========================================*/
+
+.sales-header{
+
+    display:grid;
+
+    grid-template-columns:220px 220px 1fr;
+
+    gap:20px;
+
+    align-items:end;
+
+    margin-bottom:25px;
+
+}
+
+/*==========================================
+        FORM GROUP
+==========================================*/
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#374151;
+
+    margin-bottom:8px;
+
+}
+
+/*==========================================
+        INPUTS
+==========================================*/
+
+.form-group input,
+.form-group select{
+
+    width:100%;
+
+    height:46px;
+
+    padding:0 14px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:8px;
+
+    background:#ffffff;
+
+    font-size:15px;
+
+    transition:.25s;
+
+    box-sizing:border-box;
+
+}
+
+.form-group input:focus,
+.form-group select:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/*==========================================
+        READ ONLY
+==========================================*/
+
+.form-group input[readonly]{
+
+    background:#f3f4f6;
+
+    color:#374151;
+
+    font-weight:600;
+
+}
+
+/*==========================================
+        DISABLED
+==========================================*/
+
+.form-group input:disabled,
+.form-group select:disabled{
+
+    background:#f3f4f6;
+
+    color:#6b7280;
+
+    cursor:not-allowed;
+
+}
+
+/*==========================================
+        PARTY
+==========================================*/
+
+.party-group{
+
+    width:100%;
+
+}
+
+/*==========================================
+        LAPTOP
+==========================================*/
+
+@media(max-width:1200px){
+
+.sales-header{
+
+    grid-template-columns:200px 200px 1fr;
+
+    gap:16px;
+
+}
+
+}
+
+/*==========================================
+        TABLET
+==========================================*/
+
+@media(max-width:992px){
+
+.sales-header{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.party-group{
+
+    grid-column:1 / span 2;
+
+}
+
+}
+
+/*==========================================
+        MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.sales-header{
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+}
+
+.party-group{
+
+    grid-column:auto;
+
+}
+
+.form-group input,
+.form-group select{
+
+    height:44px;
+
+}
+
+}

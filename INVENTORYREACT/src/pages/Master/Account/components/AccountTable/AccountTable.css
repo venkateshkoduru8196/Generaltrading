@@ -1,0 +1,542 @@
+/*==========================================================
+    Card
+==========================================================*/
+
+.account-table-card{
+
+    background:#ffffff;
+
+    border:1px solid #dbe3ee;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+
+    margin-bottom:8px;
+
+}
+
+
+/*==========================================================
+    Header
+==========================================================*/
+
+.account-table-header{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 18px;
+
+}
+
+.account-table-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:.3px;
+
+}
+
+.account-table-header span{
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+
+/*==========================================================
+    Toolbar
+==========================================================*/
+
+.account-table-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    gap:18px;
+
+    background:#f8fafc;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+
+/*==========================================================
+    Search
+==========================================================*/
+
+.account-table-search-box{
+
+    position:relative;
+
+    width:240px;
+
+}
+
+.account-table-search-icon{
+
+    position:absolute;
+
+    left:12px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#64748b;
+
+    font-size:14px;
+
+    pointer-events:none;
+
+}
+
+.account-table-search-box input{
+
+    width:100%;
+
+    height:34px;
+
+    padding:0 12px 0 36px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:6px;
+
+    font-size:13px;
+
+    outline:none;
+
+    transition:.25s;
+
+    background:#ffffff;
+
+    box-sizing:border-box;
+
+}
+
+.account-table-search-box input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37,99,235,.15);
+
+}
+
+.account-table-search-box input:disabled{
+
+    background:#f3f4f6;
+
+    cursor:not-allowed;
+
+}
+
+
+/*==========================================================
+    Filter
+==========================================================*/
+
+.account-table-filter{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.account-table-filter label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.account-table-filter select{
+
+    width:160px;
+
+    height:34px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:6px;
+
+    padding:0 10px;
+
+    font-size:13px;
+
+    outline:none;
+
+    background:#ffffff;
+
+}
+
+.account-table-filter select:focus{
+
+    border-color:#2563eb;
+
+}
+
+.account-table-filter select:disabled{
+
+    background:#f3f4f6;
+
+    cursor:not-allowed;
+
+}
+
+
+/*==========================================================
+    Wrapper
+==========================================================*/
+
+.account-table-wrapper{
+
+    max-height:420px;
+
+    overflow:auto;
+
+}
+
+
+/*==========================================================
+    Scrollbar
+==========================================================*/
+
+.account-table-wrapper::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+.account-table-wrapper::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+
+}
+
+.account-table-wrapper::-webkit-scrollbar-track{
+
+    background:#f8fafc;
+
+}
+
+
+/*==========================================================
+    Table
+==========================================================*/
+
+.account-table{
+
+    width:100%;
+
+    min-width:1000px;
+
+    border-collapse:collapse;
+
+}
+
+
+/*==========================================================
+    Table Header
+==========================================================*/
+
+.account-table thead th{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:10;
+
+    background:#1d4ed8;
+
+    color:#ffffff;
+
+    padding:8px 10px;
+
+    height:40px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    border:1px solid #2563eb;
+
+    white-space:nowrap;
+
+}
+
+
+/*==========================================================
+    Table Body
+==========================================================*/
+
+.account-table td{
+
+    padding:6px 10px;
+
+    height:38px;
+
+    border:1px solid #e5e7eb;
+
+    text-align:center;
+
+    vertical-align:middle;
+
+    font-size:13px;
+
+    line-height:1.2;
+
+}
+
+
+/*==========================================================
+    Account Code
+==========================================================*/
+
+.account-table .account-code{
+
+    font-weight:600;
+
+    color:#111827;
+
+}
+
+
+/*==========================================================
+    Alternate Rows
+==========================================================*/
+
+.account-table tbody tr:nth-child(even){
+
+    background:#fafafa;
+
+}
+
+
+/*==========================================================
+    Hover
+==========================================================*/
+
+.account-table tbody tr:hover{
+
+    background:#edf6ff;
+
+    cursor:pointer;
+
+    transition:.15s;
+
+}
+
+
+/*==========================================================
+    Selected Row
+==========================================================*/
+
+.account-selected-row{
+
+    background:#dbeafe !important;
+
+}
+
+
+/*==========================================================
+    Status Badge
+==========================================================*/
+
+.account-status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:68px;
+
+    height:24px;
+
+    padding:0 10px;
+
+    border-radius:14px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+}
+
+
+/*==========================================================
+    Active
+==========================================================*/
+
+.account-active{
+
+    background:#16a34a;
+
+}
+
+
+/*==========================================================
+    Inactive
+==========================================================*/
+
+.account-inactive{
+
+    background:#dc2626;
+
+}
+
+
+/*==========================================================
+    No Data
+==========================================================*/
+
+.account-no-data{
+
+    padding:35px;
+
+    text-align:center;
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+
+/*==========================================================
+    Responsive
+==========================================================*/
+
+@media(max-width:992px){
+
+    .account-table-toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .account-table-search-box{
+
+        width:100%;
+
+    }
+
+    .account-table-filter{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+    .account-table-filter select{
+
+        flex:1;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .account-table-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:8px;
+
+    }
+
+    .account-table-header h3{
+
+        font-size:17px;
+
+    }
+
+    .account-table-header span{
+
+        font-size:13px;
+
+    }
+
+}
+
+
+
+/*==========================================================
+    Account Type
+==========================================================*/
+
+.account-table .account-type-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:90px;
+
+    height:24px;
+
+    padding:0 10px;
+
+    border-radius:14px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#1e3a8a;
+
+    background:#dbeafe;
+
+    border:1px solid #bfdbfe;
+
+}

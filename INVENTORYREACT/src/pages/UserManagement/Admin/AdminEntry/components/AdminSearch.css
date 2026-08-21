@@ -1,0 +1,212 @@
+/*==========================================================
+  SEARCH BAR
+==========================================================*/
+
+.admin-search {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(240px, 1fr)
+        160px
+        auto
+        auto;
+
+    gap: 10px;
+
+    padding: 12px 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    margin-bottom: 14px;
+}
+
+
+/*==========================================================
+  SEARCH INPUT
+==========================================================*/
+
+.admin-search-main {
+
+    height: 42px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.admin-search-main input {
+
+    width: 100%;
+
+    height: 42px;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 8px;
+
+    padding: 0 14px 0 38px;
+
+    color: #1e293b;
+
+    background: #ffffff;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.admin-search-main input::placeholder {
+
+    color: #94a3b8;
+}
+
+
+.admin-search-main input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, .10);
+}
+
+
+/*==========================================================
+  SEARCH ICON
+==========================================================*/
+
+.admin-search-icon {
+
+    position: absolute;
+
+    left: 13px;
+
+    z-index: 1;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    pointer-events: none;
+}
+
+
+/*==========================================================
+  FILTER
+==========================================================*/
+
+.admin-filter-select {
+
+    width: 100%;
+
+    height: 42px;
+
+    padding: 0 11px;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    font-size: 13px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+.admin-filter-select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, .10);
+}
+
+
+/*==========================================================
+  CLEAR
+==========================================================*/
+
+.admin-clear-btn {
+
+    height: 42px;
+
+    padding: 0 14px;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.admin-clear-btn:hover {
+
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+}
+
+
+/*==========================================================
+  RESPONSIVE
+==========================================================*/
+
+@media (max-width: 900px) {
+
+    .admin-search {
+
+        grid-template-columns:
+            1fr 160px;
+
+    }
+
+
+    .admin-search-main {
+
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .admin-search {
+
+        grid-template-columns: 1fr;
+
+        padding: 10px;
+    }
+
+
+    .admin-search-main {
+
+        grid-column: auto;
+    }
+
+}

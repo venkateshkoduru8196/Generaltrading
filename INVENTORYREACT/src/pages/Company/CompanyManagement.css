@@ -1,0 +1,1312 @@
+/* =========================================================
+   COMPANY MANAGEMENT
+   ========================================================= */
+
+.company-management-page {
+    min-height: 100vh;
+
+    background: #f5f7fb;
+
+    padding: 30px 24px 40px;
+
+    box-sizing: border-box;
+}
+
+.company-management-container {
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.company-page-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 22px;
+}
+
+.company-title-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.company-title-icon {
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: #fff;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 8px 20px rgba(
+            37,
+            99,
+            235,
+            .18
+        );
+}
+
+.company-title-area h1 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+    letter-spacing: -.3px;
+}
+
+.company-title-area p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.company-primary-btn {
+    min-height: 42px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 17px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: #fff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 10px rgba(
+            37,
+            99,
+            235,
+            .16
+        );
+
+    transition: .18s ease;
+}
+
+.company-primary-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+.company-primary-btn:disabled {
+    opacity: .6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+.company-primary-btn span {
+    font-size: 17px;
+}
+
+.company-secondary-btn {
+    min-height: 42px;
+
+    padding: 0 18px;
+
+    border: 1px solid #d7dde6;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.company-secondary-btn:hover {
+    background: #f8fafc;
+}
+
+.company-danger-btn {
+    min-height: 42px;
+
+    padding: 0 18px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: #dc2626;
+
+    color: #fff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.company-danger-btn:hover {
+    background: #b91c1c;
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.company-alert {
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    padding: 13px 40px 13px 14px;
+
+    border: 1px solid;
+
+    border-radius: 9px;
+}
+
+.company-alert-error {
+    background: #fff7f7;
+
+    border-color: #fecaca;
+
+    color: #991b1b;
+}
+
+.company-alert-success {
+    background: #f3fdf6;
+
+    border-color: #bbf7d0;
+
+    color: #166534;
+}
+
+.company-alert-symbol {
+    width: 26px;
+    height: 26px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-weight: 700;
+}
+
+.company-alert-error
+.company-alert-symbol {
+    background: #fee2e2;
+}
+
+.company-alert-success
+.company-alert-symbol {
+    background: #dcfce7;
+}
+
+.company-alert strong {
+    display: block;
+
+    font-size: 12px;
+}
+
+.company-alert p {
+    margin: 3px 0 0;
+
+    font-size: 12px;
+}
+
+.company-alert button {
+    position: absolute;
+
+    right: 10px;
+    top: 9px;
+
+    width: 28px;
+    height: 28px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #64748b;
+
+    font-size: 19px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   LIST CARD
+   ========================================================= */
+
+.company-list-card,
+.company-form-card {
+    background: #fff;
+
+    border: 1px solid #e5e9ef;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 7px 24px rgba(
+            15,
+            23,
+            42,
+            .05
+        );
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.company-toolbar {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 17px 20px;
+
+    border-bottom: 1px solid #edf0f4;
+
+    background: #fff;
+}
+
+.company-search {
+    position: relative;
+
+    flex: 1;
+
+    max-width: 430px;
+}
+
+.company-search span {
+    position: absolute;
+
+    left: 13px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 14px;
+
+    color: #64748b;
+}
+
+.company-search input,
+.company-status-filter {
+    height: 42px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #1f2937;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    outline: none;
+}
+
+.company-search input {
+    width: 100%;
+
+    padding: 0 13px 0 38px;
+}
+
+.company-search input:focus,
+.company-status-filter:focus {
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 0 0 3px rgba(
+            59,
+            130,
+            246,
+            .09
+        );
+}
+
+.company-status-filter {
+    min-width: 135px;
+
+    padding: 0 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.company-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.company-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 950px;
+}
+
+.company-table thead {
+    background: #f8fafc;
+}
+
+.company-table th {
+    padding: 13px 18px;
+
+    text-align: left;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .35px;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #e8edf3;
+}
+
+.company-table td {
+    padding: 15px 18px;
+
+    border-bottom: 1px solid #eef1f5;
+
+    color: #334155;
+
+    font-size: 12.5px;
+
+    vertical-align: middle;
+}
+
+.company-table tbody tr:hover {
+    background: #fbfcfe;
+}
+
+.company-action-column {
+    text-align: right !important;
+}
+
+
+/* =========================================================
+   COMPANY NAME
+   ========================================================= */
+
+.company-name-cell {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.company-avatar {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #eff6ff;
+
+    font-size: 16px;
+}
+
+.company-name-cell strong {
+    display: block;
+
+    color: #1f2937;
+
+    font-size: 13px;
+
+    font-weight: 650;
+}
+
+.company-name-cell span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   CELL TEXT
+   ========================================================= */
+
+.company-cell-text {
+    color: #475569;
+}
+
+.company-gstin {
+    color: #475569;
+
+    font-family: monospace;
+
+    font-size: 11.5px;
+}
+
+.company-contact-cell {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.company-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 10.5px;
+
+    font-weight: 600;
+}
+
+.company-status.active {
+    background: #ecfdf3;
+
+    color: #15803d;
+}
+
+.company-status.inactive {
+    background: #f1f5f9;
+
+    color: #64748b;
+}
+
+.company-status-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+
+/* =========================================================
+   ROW ACTIONS
+   ========================================================= */
+
+.company-row-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 6px;
+}
+
+.company-edit-btn,
+.company-delete-btn {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e1e6ed;
+
+    border-radius: 7px;
+
+    background: #fff;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    transition: .15s ease;
+}
+
+.company-edit-btn {
+    color: #2563eb;
+}
+
+.company-edit-btn:hover {
+    background: #eff6ff;
+
+    border-color: #bfdbfe;
+}
+
+.company-delete-btn {
+    color: #dc2626;
+}
+
+.company-delete-btn:hover {
+    background: #fef2f2;
+
+    border-color: #fecaca;
+}
+
+
+/* =========================================================
+   LIST FOOTER
+   ========================================================= */
+
+.company-list-footer {
+    padding: 13px 20px;
+
+    color: #94a3b8;
+
+    font-size: 11.5px;
+
+    border-top: 1px solid #edf0f4;
+}
+
+.company-list-footer strong {
+    color: #475569;
+}
+
+
+/* =========================================================
+   EMPTY / LOADING
+   ========================================================= */
+
+.company-loading,
+.company-empty {
+    min-height: 300px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.company-loading p,
+.company-empty p {
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+.company-empty-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eff6ff;
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.company-empty h3 {
+    margin: 0;
+
+    color: #334155;
+
+    font-size: 16px;
+}
+
+.company-empty p {
+    max-width: 360px;
+
+    line-height: 1.5;
+
+    margin: 7px 0 18px;
+}
+
+
+/* =========================================================
+   FORM HEADER
+   ========================================================= */
+
+.company-form-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 22px 25px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.company-form-header h2 {
+    margin: 0;
+
+    color: #1f2937;
+
+    font-size: 19px;
+}
+
+.company-form-header p {
+    margin: 5px 0 0;
+
+    color: #94a3b8;
+
+    font-size: 11.5px;
+}
+
+.company-close-btn {
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 7px;
+
+    background: #fff;
+
+    color: #64748b;
+
+    font-size: 19px;
+
+    cursor: pointer;
+}
+
+.company-close-btn:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   FORM SECTION
+   ========================================================= */
+
+.company-form-section {
+    padding: 26px 25px;
+}
+
+.company-section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 22px;
+}
+
+.company-section-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #eff6ff;
+
+    font-size: 17px;
+}
+
+.company-section-title h3 {
+    margin: 0;
+
+    color: #334155;
+
+    font-size: 15px;
+}
+
+.company-section-title p {
+    margin: 3px 0 0;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FORM GRID
+   ========================================================= */
+
+.company-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 19px 21px;
+}
+
+.company-field {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+.company-field-full {
+    grid-column: 1 / -1;
+}
+
+.company-field label {
+    margin-bottom: 7px;
+
+    color: #374151;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.company-field label span {
+    margin-left: 3px;
+
+    color: #dc2626;
+}
+
+.company-field input,
+.company-field textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #1f2937;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: .18s ease;
+}
+
+.company-field input {
+    height: 44px;
+
+    padding: 0 13px;
+}
+
+.company-field textarea {
+    padding: 11px 13px;
+
+    resize: vertical;
+
+    min-height: 90px;
+}
+
+.company-field input::placeholder,
+.company-field textarea::placeholder {
+    color: #a1a9b6;
+}
+
+.company-field input:focus,
+.company-field textarea:focus {
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 0 0 3px rgba(
+            59,
+            130,
+            246,
+            .09
+        );
+}
+
+.company-field input:disabled,
+.company-field textarea:disabled {
+    background: #f5f6f8;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   ACTIVE SWITCH
+   ========================================================= */
+
+.company-status-field {
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 24px;
+}
+
+.company-switch-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #475569;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.company-switch-label input {
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+.company-switch {
+    position: relative;
+
+    width: 38px;
+    height: 21px;
+
+    border-radius: 20px;
+
+    background: #cbd5e1;
+
+    transition: .2s;
+}
+
+.company-switch::after {
+    content: "";
+
+    position: absolute;
+
+    top: 3px;
+    left: 3px;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    box-shadow:
+        0 1px 3px rgba(
+            0,
+            0,
+            0,
+            .15
+        );
+
+    transition: .2s;
+}
+
+.company-switch-label
+input:checked
++ .company-switch {
+    background: #2563eb;
+}
+
+.company-switch-label
+input:checked
++ .company-switch::after {
+    transform: translateX(17px);
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+   ========================================================= */
+
+.company-form-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 18px 25px;
+
+    border-top: 1px solid #edf0f4;
+
+    background: #fafbfc;
+}
+
+
+/* =========================================================
+   SPINNER
+   ========================================================= */
+
+.company-spinner {
+    width: 14px;
+    height: 14px;
+
+    border: 2px solid rgba(
+        255,
+        255,
+        255,
+        .35
+    );
+
+    border-top-color: #fff;
+
+    border-radius: 50%;
+
+    animation:
+        company-spin .7s linear infinite;
+}
+
+.company-large-spinner {
+    width: 27px;
+    height: 27px;
+
+    border: 3px solid #dbeafe;
+
+    border-top-color: #2563eb;
+
+    border-radius: 50%;
+
+    animation:
+        company-spin .7s linear infinite;
+}
+
+@keyframes company-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   DELETE MODAL
+   ========================================================= */
+
+.company-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(
+        15,
+        23,
+        42,
+        .45
+    );
+
+    backdrop-filter: blur(2px);
+}
+
+.company-delete-modal {
+    width: 100%;
+
+    max-width: 420px;
+
+    padding: 28px;
+
+    border-radius: 14px;
+
+    background: #fff;
+
+    box-shadow:
+        0 20px 50px rgba(
+            15,
+            23,
+            42,
+            .20
+        );
+
+    text-align: center;
+}
+
+.company-delete-icon {
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.company-delete-modal h2 {
+    margin: 0;
+
+    color: #1f2937;
+
+    font-size: 18px;
+}
+
+.company-delete-modal p {
+    margin: 9px 0 0;
+
+    color: #64748b;
+
+    font-size: 12.5px;
+
+    line-height: 1.5;
+}
+
+.company-delete-warning {
+    color: #b45309 !important;
+
+    background: #fffbeb;
+
+    border-radius: 7px;
+
+    padding: 9px;
+
+    margin-top: 13px !important;
+}
+
+.company-delete-actions {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 22px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .company-management-page {
+        padding: 22px 16px 30px;
+    }
+
+    .company-page-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .company-primary-btn {
+        width: auto;
+    }
+
+    .company-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .company-field-full {
+        grid-column: auto;
+    }
+
+    .company-toolbar {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .company-search {
+        max-width: none;
+    }
+
+    .company-status-filter {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .company-management-page {
+        padding: 17px 10px 25px;
+    }
+
+    .company-title-area {
+        gap: 11px;
+    }
+
+    .company-title-icon {
+        width: 47px;
+        height: 47px;
+
+        border-radius: 11px;
+
+        font-size: 21px;
+    }
+
+    .company-title-area h1 {
+        font-size: 20px;
+    }
+
+    .company-title-area p {
+        font-size: 11px;
+    }
+
+    .company-form-header,
+    .company-form-section {
+        padding: 20px 16px;
+    }
+
+    .company-form-actions {
+        flex-direction: column-reverse;
+
+        padding: 16px;
+    }
+
+    .company-form-actions button {
+        width: 100%;
+    }
+
+    .company-delete-modal {
+        padding: 22px 18px;
+    }
+
+    .company-delete-actions {
+        flex-direction: column-reverse;
+    }
+
+    .company-delete-actions button {
+        width: 100%;
+    }
+}

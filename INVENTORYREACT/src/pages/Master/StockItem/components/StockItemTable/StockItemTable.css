@@ -1,0 +1,462 @@
+/* /* /*==========================================================
+    Card
+==========================================================*/
+
+.stock-table-card{
+
+    background:#ffffff;
+
+    border:1px solid #dbe3ee;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+
+    margin-bottom:20px;
+
+}
+
+
+/*==========================================================
+    Header
+==========================================================*/
+
+.stock-table-header{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 18px;
+
+}
+
+.stock-table-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:.3px;
+
+}
+
+.stock-table-header span{
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+
+/*==========================================================
+    Toolbar
+==========================================================*/
+
+.stock-table-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    gap:18px;
+
+    background:#f8fafc;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+
+/*==========================================================
+    Search
+==========================================================*/
+
+.table-search-box{
+
+    position:relative;
+
+    width:240px;
+
+}
+
+.table-search-icon{
+
+    position:absolute;
+
+    left:12px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.table-search-box input{
+
+    width:100%;
+
+    height:34px;
+
+    padding:0 12px 0 36px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:6px;
+
+    font-size:13px;
+
+    outline:none;
+
+    transition:.25s;
+
+    background:#ffffff;
+
+}
+
+.table-search-box input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 2px rgba(37,99,235,.15);
+
+}
+
+
+/*==========================================================
+    Filter
+==========================================================*/
+
+.table-filter{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.table-filter label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.table-filter select{
+
+    width:160px;
+
+    height:34px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:6px;
+
+    padding:0 10px;
+
+    font-size:13px;
+
+    outline:none;
+
+    background:#ffffff;
+
+}
+
+.table-filter select:focus{
+
+    border-color:#2563eb;
+
+}
+
+
+/*==========================================================
+    Wrapper
+==========================================================*/
+
+.stock-table-wrapper{
+
+    max-height:420px;
+
+    overflow:auto;
+
+}
+
+
+/*==========================================================
+    Scrollbar
+==========================================================*/
+
+.stock-table-wrapper::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+.stock-table-wrapper::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+
+}
+
+.stock-table-wrapper::-webkit-scrollbar-track{
+
+    background:#f8fafc;
+
+}
+
+
+/*==========================================================
+    Table
+==========================================================*/
+
+.stock-table{
+
+    width:100%;
+
+    min-width:1100px;
+
+    border-collapse:collapse;
+
+}
+
+
+/*==========================================================
+    Table Header
+==========================================================*/
+
+.stock-table thead th{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:10;
+
+    background:#1d4ed8;
+
+    color:#ffffff;
+
+    padding:8px 10px;
+
+    height:40px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    border:1px solid #2563eb;
+
+    white-space:nowrap;
+
+}
+
+
+/*==========================================================
+    Table Body
+==========================================================*/
+
+.stock-table td{
+
+    padding:6px 10px;
+
+    height:38px;
+
+    border:1px solid #e5e7eb;
+
+    text-align:center;
+
+    vertical-align:middle;
+
+    font-size:13px;
+
+    line-height:1.2;
+
+}
+
+
+/*==========================================================
+    Alternate Rows
+==========================================================*/
+
+.stock-table tbody tr:nth-child(even){
+
+    background:#fafafa;
+
+}
+
+
+/*==========================================================
+    Hover
+==========================================================*/
+
+.stock-table tbody tr:hover{
+
+    background:#edf6ff;
+
+    cursor:pointer;
+
+    transition:.15s;
+
+}
+
+
+/*==========================================================
+    Selected
+==========================================================*/
+
+.selected-row{
+
+    background:#dbeafe !important;
+
+}
+
+
+/*==========================================================
+    Status Badge
+==========================================================*/
+
+.status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:68px;
+
+    height:24px;
+
+    padding:0 10px;
+
+    border-radius:14px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+}
+
+.active{
+
+    background:#16a34a;
+
+}
+
+.inactive{
+
+    background:#dc2626;
+
+}
+
+
+/*==========================================================
+    No Data
+==========================================================*/
+
+.no-data{
+
+    padding:35px;
+
+    text-align:center;
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+
+/*==========================================================
+    Responsive
+==========================================================*/
+
+@media(max-width:992px){
+
+.stock-table-toolbar{
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+}
+
+.table-search-box{
+
+    width:100%;
+
+}
+
+.table-filter{
+
+    width:100%;
+
+    justify-content:space-between;
+
+}
+
+.table-filter select{
+
+    flex:1;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.stock-table-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:8px;
+
+}
+
+.stock-table-header h3{
+
+    font-size:17px;
+
+}
+
+.stock-table-header span{
+
+    font-size:13px;
+
+}
+
+}  

@@ -1,0 +1,687 @@
+/*==================================================
+BUSINESS REPORT PAGE
+==================================================*/
+
+.business-report-page{
+
+    min-height:100vh;
+
+    padding:30px;
+
+    background:#f4f7fb;
+
+}
+
+
+/*==================================================
+PAGE HEADER
+==================================================*/
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.page-header h1{
+
+    margin:0;
+
+    color:#1e293b;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.page-header p{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+    font-size:15px;
+
+}
+
+
+/*==================================================
+COMMON CARD
+==================================================*/
+
+.card{
+
+    background:#ffffff;
+
+    border-radius:16px;
+
+    padding:28px;
+
+    margin-bottom:28px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    border:1px solid #e5e7eb;
+
+}
+
+
+/*==================================================
+CARD TITLE
+==================================================*/
+
+.card-title{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#1e293b;
+
+    margin-bottom:22px;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid #edf2f7;
+
+}
+
+
+
+
+/*=========================================================
+REPORT FILTER
+=========================================================*/
+
+.report-filter{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap:22px;
+
+    align-items:end;
+
+}
+
+
+/*=========================================================
+FILTER GROUP
+=========================================================*/
+
+.filter-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/*=========================================================
+LABEL
+=========================================================*/
+
+.filter-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#475569;
+
+    margin-bottom:8px;
+
+}
+
+
+/*=========================================================
+INPUT
+=========================================================*/
+
+.filter-group input,
+
+.filter-group select{
+
+    height:48px;
+
+    padding:0 14px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    background:#ffffff;
+
+    font-size:15px;
+
+    color:#1e293b;
+
+    transition:.3s;
+
+    outline:none;
+
+}
+
+
+/*=========================================================
+FOCUS
+=========================================================*/
+
+.filter-group input:focus,
+
+.filter-group select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:
+
+        0 0 0 4px
+
+        rgba(37,99,235,.12);
+
+}
+
+
+/*=========================================================
+HOVER
+=========================================================*/
+
+.filter-group input:hover,
+
+.filter-group select:hover{
+
+    border-color:#2563eb;
+
+}
+
+
+
+
+
+
+/*=========================================================
+TOOLBAR
+=========================================================*/
+
+.toolbar-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/*=========================================================
+BUTTON
+=========================================================*/
+
+.toolbar-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    min-width:180px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:12px;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+}
+
+/*=========================================================
+ICONS
+=========================================================*/
+
+.toolbar-btn svg{
+
+    font-size:18px;
+
+}
+
+/*=========================================================
+HOVER
+=========================================================*/
+
+.toolbar-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+/*=========================================================
+DISABLED
+=========================================================*/
+
+.toolbar-btn:disabled{
+
+    opacity:.65;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+}
+
+/*=========================================================
+VIEW
+=========================================================*/
+
+.btn-view{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #2563eb,
+
+        #1d4ed8
+
+    );
+
+}
+
+/*=========================================================
+PDF
+=========================================================*/
+
+.btn-pdf{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #ef4444,
+
+        #b91c1c
+
+    );
+
+}
+
+/*=========================================================
+EXCEL
+=========================================================*/
+
+.btn-excel{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #22c55e,
+
+        #15803d
+
+    );
+
+}
+
+/*=========================================================
+WORD
+=========================================================*/
+
+.btn-word{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #0f4c81,
+
+        #1e3a8a
+
+    );
+
+}
+
+/*=========================================================
+RESPONSIVE
+=========================================================*/
+
+@media(max-width:768px){
+
+    .toolbar-container{
+
+        flex-direction:column;
+
+    }
+
+    .toolbar-btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+
+
+/*==================================================
+REPORT WRAPPER
+==================================================*/
+
+.report-wrapper{
+
+    margin-top:25px;
+
+}
+
+/*==================================================
+COMPANY CARD
+==================================================*/
+
+.company-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    padding:25px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #2563eb,
+
+        #1e40af
+
+    );
+
+    color:#ffffff;
+
+    border-radius:14px;
+
+    margin-bottom:30px;
+
+}
+
+.company-card h2{
+
+    margin:0;
+
+    font-size:28px;
+
+}
+
+.company-card p{
+
+    margin-top:8px;
+
+    opacity:.9;
+
+}
+
+.generated-info{
+
+    text-align:right;
+
+}
+
+.generated-info span{
+
+    display:block;
+
+    font-size:14px;
+
+    opacity:.8;
+
+}
+
+.generated-info strong{
+
+    font-size:17px;
+
+}
+
+/*==================================================
+REPORT CARD
+==================================================*/
+
+.report-card{
+
+    background:#ffffff;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    margin-bottom:30px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+/*==================================================
+SECTION HEADER
+==================================================*/
+
+.section-header{
+
+    padding:16px 22px;
+
+    color:#ffffff;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+/*==================================================
+GOLD
+==================================================*/
+
+.gold-theme{
+
+    background:linear-gradient(
+
+        90deg,
+
+        #f59e0b,
+
+        #d97706
+
+    );
+
+}
+
+/*==================================================
+SILVER
+==================================================*/
+
+.silver-theme{
+
+    background:linear-gradient(
+
+        90deg,
+
+        #64748b,
+
+        #475569
+
+    );
+
+}
+
+/*==================================================
+TABLE
+==================================================*/
+
+.table-container{
+
+    overflow:auto;
+
+}
+
+.report-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.report-table thead{
+
+    background:#1e293b;
+
+    color:#ffffff;
+
+}
+
+.report-table th{
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.report-table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.report-table td:first-child{
+
+    font-weight:600;
+
+}
+
+.report-table td:not(:first-child){
+
+    text-align:right;
+
+}
+
+/*==================================================
+ZEBRA
+==================================================*/
+
+.report-table tbody tr:nth-child(even){
+
+    background:#f8fafc;
+
+}
+
+/*==================================================
+HOVER
+==================================================*/
+
+.report-table tbody tr:hover{
+
+    background:#eef5ff;
+
+}
+
+/*==================================================
+TOTAL
+==================================================*/
+
+.total-row{
+
+    background:#dbeafe !important;
+
+    font-weight:700;
+
+    color:#1e3a8a;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+    .company-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+
+    }
+
+    .generated-info{
+
+        text-align:left;
+
+    }
+
+}
+
+
+
+
+
+/*==========================================
+DOWNLOAD PDF
+==========================================*/
+
+.btn-download{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #7c3aed,
+
+        #5b21b6
+
+    );
+
+}

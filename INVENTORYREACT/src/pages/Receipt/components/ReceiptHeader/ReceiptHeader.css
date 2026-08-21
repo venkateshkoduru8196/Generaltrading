@@ -1,0 +1,52 @@
+.receipt-header {
+  display: grid;
+  grid-template-columns: 180px 220px minmax(280px, 1fr);
+  gap: 18px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+  margin-bottom: 18px;
+}
+
+.receipt-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.receipt-form-group label {
+  font-weight: 600;
+  color: #334155;
+  font-size: 14px;
+}
+
+.receipt-form-group input,
+.receipt-form-group select {
+  width: 100%;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  color: #0f172a;
+}
+
+.receipt-form-group input:read-only {
+  background: #f8fafc;
+}
+
+.receipt-form-group input:disabled,
+.receipt-form-group select:disabled {
+  background: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+@media (max-width: 800px) {
+  .receipt-header {
+    grid-template-columns: 1fr;
+  }
+}

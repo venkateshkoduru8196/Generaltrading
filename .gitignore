@@ -1,0 +1,35 @@
+# Visual Studio
+.vs/
+**/.vs/
+
+# .NET build files
+**/bin/
+**/obj/
+**/publish/
+
+# Visual Studio user files
+*.user
+*.suo
+*.csproj.user
+
+# Temporary files
+*.tmp
+*.log
+
+# React
+**/node_modules/
+**/dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS files
+Thumbs.db
+.DS_Store
+
+
+# Application configuration - keep credentials out of Git
+**/appsettings.json
+**/appsettings.Development.json

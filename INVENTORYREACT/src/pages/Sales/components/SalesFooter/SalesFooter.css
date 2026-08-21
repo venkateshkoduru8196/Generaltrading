@@ -1,0 +1,147 @@
+/*==========================================
+        SALES FOOTER
+==========================================*/
+
+.sales-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+/*==========================================
+        SEARCH
+==========================================*/
+
+.sales-search{
+
+    width:320px;
+
+}
+
+.sales-search label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#374151;
+
+}
+
+.search-box{
+
+    display:flex;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    height:46px;
+
+    border:1px solid #d1d5db;
+
+    border-right:none;
+
+    border-radius:8px 0 0 8px;
+
+    padding:0 14px;
+
+    font-size:15px;
+
+}
+
+.search-box button{
+
+    width:55px;
+
+    border:none;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    border-radius:0 8px 8px 0;
+
+    font-size:18px;
+
+}
+
+.search-box button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/*==========================================
+        BUTTONS
+==========================================*/
+
+.sales-footer-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+/*==========================================
+        TABLET
+==========================================*/
+
+@media(max-width:992px){
+
+.sales-footer{
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+}
+
+.sales-search{
+
+    width:100%;
+
+}
+
+.sales-footer-buttons{
+
+    justify-content:center;
+
+}
+
+}
+
+/*==========================================
+        MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.search-box input{
+
+    height:44px;
+
+}
+
+.search-box button{
+
+    height:44px;
+
+}
+
+}

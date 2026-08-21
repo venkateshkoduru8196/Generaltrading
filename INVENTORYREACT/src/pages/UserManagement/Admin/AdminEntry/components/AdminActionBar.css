@@ -1,0 +1,169 @@
+/*==========================================================
+  ACTION BAR
+==========================================================*/
+
+.admin-action-bar {
+
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 10px 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-bottom: 0;
+
+    border-radius: 12px 12px 0 0;
+}
+
+
+/*==========================================================
+  RECORD INFO
+==========================================================*/
+
+.admin-record-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.admin-record-label {
+
+    color: #475569;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.admin-record-count {
+
+    min-width: 28px;
+
+    height: 24px;
+
+    padding: 0 8px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: #f1f5f9;
+
+    color: #334155;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/*==========================================================
+  REFRESH
+==========================================================*/
+
+.admin-refresh-btn {
+
+    height: 34px;
+
+    padding: 0 11px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.admin-refresh-btn:hover {
+
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+}
+
+
+.admin-refresh-btn:disabled {
+
+    opacity: .6;
+
+    cursor: not-allowed;
+}
+
+
+.admin-refresh-icon {
+
+    font-size: 18px;
+
+    line-height: 1;
+}
+
+
+/*==========================================================
+  SPIN
+==========================================================*/
+
+.spinning {
+
+    animation: admin-spin .8s linear infinite;
+}
+
+
+@keyframes admin-spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/*==========================================================
+  MOBILE
+==========================================================*/
+
+@media (max-width: 520px) {
+
+    .admin-action-bar {
+
+        padding: 9px 10px;
+    }
+
+}

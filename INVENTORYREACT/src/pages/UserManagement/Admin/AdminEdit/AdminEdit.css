@@ -1,0 +1,875 @@
+/*==========================================================
+  PAGE
+==========================================================*/
+
+.admin-edit-page {
+
+    min-height: 100vh;
+
+    padding: 24px;
+
+    box-sizing: border-box;
+
+    background: #f5f7fb;
+}
+
+
+/*==========================================================
+  CARD
+==========================================================*/
+
+.admin-edit-card {
+
+    width: 100%;
+
+    max-width: 980px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 18px rgba(15, 23, 42, .06);
+}
+
+
+/*==========================================================
+  HEADER
+==========================================================*/
+
+.admin-edit-header {
+
+    min-height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 18px 24px;
+
+    border-bottom: 1px solid #eef2f7;
+}
+
+
+.admin-edit-back {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+.admin-edit-back:hover {
+
+    background: #f8fafc;
+
+    color: #2563eb;
+
+    border-color: #bfdbfe;
+}
+
+
+/*==========================================================
+  TITLE
+==========================================================*/
+
+.admin-edit-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+.admin-edit-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 20px;
+}
+
+
+.admin-edit-title h1 {
+
+    margin: 0;
+
+    color: #1e293b;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+.admin-edit-title p {
+
+    margin: 4px 0 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/*==========================================================
+  ALERT
+==========================================================*/
+
+.admin-edit-alert {
+
+    margin: 18px 24px 0;
+
+    min-height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 9px 11px;
+
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+.admin-edit-alert.error {
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    color: #b91c1c;
+}
+
+
+.admin-edit-alert.success {
+
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+
+    color: #15803d;
+}
+
+
+.admin-edit-alert .alert-icon {
+
+    width: 22px;
+
+    height: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.admin-edit-alert.error .alert-icon {
+    background: #fee2e2;
+}
+
+
+.admin-edit-alert.success .alert-icon {
+    background: #dcfce7;
+}
+
+
+.admin-edit-alert button {
+
+    width: 25px;
+
+    height: 25px;
+
+    margin-left: auto;
+
+    border: 0;
+
+    background: transparent;
+
+    color: inherit;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+
+/*==========================================================
+  SECTION
+==========================================================*/
+
+.admin-edit-section {
+
+    padding: 25px 24px;
+
+    border-bottom: 1px solid #eef2f7;
+}
+
+
+/*==========================================================
+  SECTION HEADING
+==========================================================*/
+
+.admin-edit-section-heading {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 11px;
+
+    margin-bottom: 20px;
+}
+
+
+.admin-edit-section-number {
+
+    width: 30px;
+
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.admin-edit-section-heading h2 {
+
+    margin: 0;
+
+    color: #334155;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.admin-edit-section-heading p {
+
+    margin: 4px 0 0;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/*==========================================================
+  GRID
+==========================================================*/
+
+.admin-edit-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px 20px;
+}
+
+
+.admin-edit-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+
+.admin-edit-group.full {
+
+    grid-column: 1 / -1;
+}
+
+
+/*==========================================================
+  LABEL
+==========================================================*/
+
+.admin-edit-group label {
+
+    margin-bottom: 7px;
+
+    color: #334155;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.admin-edit-group label span {
+
+    margin-left: 3px;
+
+    color: #dc2626;
+}
+
+
+/*==========================================================
+  INPUT
+==========================================================*/
+
+.admin-edit-group input,
+.admin-edit-group select {
+
+    width: 100%;
+
+    height: 44px;
+
+    box-sizing: border-box;
+
+    padding: 0 12px;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #1e293b;
+
+    font-family: inherit;
+
+    font-size: 13px;
+}
+
+
+.admin-edit-group input:focus,
+.admin-edit-group select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, .10);
+}
+
+
+.admin-edit-group input:disabled,
+.admin-edit-group select:disabled {
+
+    background: #f8fafc;
+
+    color: #94a3b8;
+
+    cursor: not-allowed;
+}
+
+
+/*==========================================================
+  STATUS TOGGLE
+==========================================================*/
+
+.admin-status-toggle {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: fit-content;
+
+    cursor: pointer;
+}
+
+
+.admin-status-toggle input {
+
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+.admin-toggle-slider {
+
+    position: relative;
+
+    width: 44px;
+
+    height: 24px;
+
+    flex-shrink: 0;
+
+    border-radius: 20px;
+
+    background: #cbd5e1;
+
+    transition: .2s ease;
+}
+
+
+.admin-toggle-slider::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 3px;
+
+    left: 3px;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 1px 3px rgba(0,0,0,.15);
+
+    transition: .2s ease;
+}
+
+
+.admin-status-toggle input:checked
++ .admin-toggle-slider {
+
+    background: #16a34a;
+}
+
+
+.admin-status-toggle input:checked
++ .admin-toggle-slider::after {
+
+    transform: translateX(20px);
+}
+
+
+.admin-toggle-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.admin-toggle-content strong {
+
+    color: #334155;
+
+    font-size: 13px;
+}
+
+
+.admin-toggle-content small {
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/*==========================================================
+  SECURITY NOTE
+==========================================================*/
+
+.admin-edit-security-note {
+
+    display: flex;
+
+    gap: 11px;
+
+    margin: 20px 24px;
+
+    padding: 13px;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 9px;
+
+    background: #eff6ff;
+
+    color: #1e40af;
+}
+
+
+.admin-edit-security-note > span {
+
+    font-size: 17px;
+}
+
+
+.admin-edit-security-note strong {
+
+    display: block;
+
+    color: #1e3a8a;
+
+    font-size: 12px;
+}
+
+
+.admin-edit-security-note p {
+
+    margin: 4px 0 0;
+
+    color: #3b82f6;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/*==========================================================
+  ACTIONS
+==========================================================*/
+
+.admin-edit-actions {
+
+    min-height: 76px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 16px 24px;
+
+    background: #fafbfc;
+}
+
+
+.admin-edit-cancel {
+
+    height: 42px;
+
+    padding: 0 18px;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.admin-edit-save {
+
+    min-width: 145px;
+
+    height: 42px;
+
+    padding: 0 18px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.admin-edit-save:hover {
+
+    background: #1d4ed8;
+
+    box-shadow:
+        0 5px 14px rgba(37, 99, 235, .20);
+}
+
+
+.admin-edit-cancel:disabled,
+.admin-edit-save:disabled {
+
+    opacity: .6;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+
+/*==========================================================
+  LOADING
+==========================================================*/
+
+.admin-edit-loading {
+
+    min-height: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+.admin-edit-spinner {
+
+    width: 30px;
+
+    height: 30px;
+
+    border: 3px solid #dbeafe;
+
+    border-top-color: #2563eb;
+
+    border-radius: 50%;
+
+    animation: admin-edit-spin .8s linear infinite;
+}
+
+
+@keyframes admin-edit-spin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/*==========================================================
+  BUTTON SPINNER
+==========================================================*/
+
+.admin-edit-button-spinner {
+
+    width: 15px;
+
+    height: 15px;
+
+    border: 2px solid rgba(255,255,255,.4);
+
+    border-top-color: #ffffff;
+
+    border-radius: 50%;
+
+    animation: admin-edit-spin .7s linear infinite;
+}
+
+
+/*==========================================================
+  TABLET
+==========================================================*/
+
+@media (max-width: 768px) {
+
+    .admin-edit-page {
+        padding: 14px;
+    }
+
+    .admin-edit-header {
+        padding: 16px 18px;
+    }
+
+    .admin-edit-section {
+        padding: 22px 18px;
+    }
+
+    .admin-edit-alert {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    .admin-edit-security-note {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    .admin-edit-actions {
+        padding: 14px 18px;
+    }
+
+}
+
+
+/*==========================================================
+  MOBILE
+==========================================================*/
+
+@media (max-width: 600px) {
+
+    .admin-edit-page {
+        padding: 0;
+        background: #ffffff;
+    }
+
+    .admin-edit-card {
+        min-height: 100vh;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .admin-edit-header {
+        padding: 14px;
+    }
+
+    .admin-edit-title h1 {
+        font-size: 18px;
+    }
+
+    .admin-edit-title p {
+        font-size: 12px;
+    }
+
+    .admin-edit-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .admin-edit-section {
+        padding: 20px 14px;
+    }
+
+    .admin-edit-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .admin-edit-group.full {
+        grid-column: auto;
+    }
+
+    .admin-edit-alert {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    .admin-edit-security-note {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    .admin-edit-actions {
+        padding: 14px;
+        flex-direction: column-reverse;
+    }
+
+    .admin-edit-cancel,
+    .admin-edit-save {
+        width: 100%;
+    }
+
+}

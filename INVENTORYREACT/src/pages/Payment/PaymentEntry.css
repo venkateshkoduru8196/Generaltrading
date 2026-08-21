@@ -1,0 +1,34 @@
+.payment-entry {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  padding: 24px;
+  background: #f8fafc;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.payment-error {
+  padding: 12px;
+  margin-bottom: 20px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .payment-entry { padding: 20px; }
+}
+
+@media (max-width: 768px) {
+  .payment-entry { padding: 16px; }
+}
+
+@media (max-width: 576px) {
+  .payment-entry { padding: 12px; }
+}
+
+@media print {
+  .payment-entry { background: white; padding: 0; }
+}

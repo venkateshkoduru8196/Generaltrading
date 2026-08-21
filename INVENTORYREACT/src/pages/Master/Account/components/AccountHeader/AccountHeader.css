@@ -1,0 +1,408 @@
+/*==========================================================
+    Card
+==========================================================*/
+
+.account-header-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    margin-bottom:8px;
+
+}
+
+
+/*==========================================================
+    Title
+==========================================================*/
+
+.account-header-title{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:54px;
+
+}
+
+.account-header-title h3{
+
+    margin:0;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:.8px;
+
+    text-transform:uppercase;
+
+}
+
+
+/*==========================================================
+    Body
+==========================================================*/
+
+.account-header-body{
+
+    display:grid;
+
+    grid-template-columns:
+        1.2fr
+        1.8fr
+        .5fr;
+
+    gap:16px;
+
+    align-items:end;
+
+    padding:18px 20px;
+
+}
+
+
+/*==========================================================
+    Form Group
+==========================================================*/
+
+.account-form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.account-form-group label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#374151;
+
+    margin-bottom:6px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.3px;
+
+}
+
+.account-form-group label span{
+
+    color:#dc2626;
+
+}
+
+
+/*==========================================================
+    Inputs
+==========================================================*/
+
+.account-form-group input{
+
+    height:36px;
+
+    padding:0 12px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:8px;
+
+    font-size:14px;
+
+    background:#ffffff;
+
+    transition:.25s;
+
+    outline:none;
+
+    box-sizing:border-box;
+
+}
+
+.account-form-group input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37,99,235,.12);
+
+}
+
+.account-form-group input:disabled{
+
+    background:#f8fafc;
+
+    color:#374151;
+
+    cursor:not-allowed;
+
+}
+
+
+/*==========================================================
+    Checkbox
+==========================================================*/
+
+.account-checkbox-group{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:36px;
+
+    margin-bottom:2px;
+
+}
+
+.account-checkbox-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#374151;
+
+    cursor:pointer;
+
+}
+
+.account-checkbox-group input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:#16a34a;
+
+}
+
+
+/*==========================================================
+    Responsive
+==========================================================*/
+
+@media(max-width:1100px){
+
+    .account-header-body{
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+    }
+
+    .account-checkbox-group{
+
+        justify-content:flex-start;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .account-header-title{
+
+        height:48px;
+
+    }
+
+    .account-header-title h3{
+
+        font-size:18px;
+
+    }
+
+    .account-header-body{
+
+        grid-template-columns:1fr;
+
+        padding:16px;
+
+        gap:14px;
+
+    }
+
+    .account-checkbox-group{
+
+        justify-content:flex-start;
+
+    }
+
+    .account-form-group input{
+
+        height:34px;
+
+    }
+
+}
+
+
+
+
+/*==========================================================
+    Account Type Dropdown
+==========================================================*/
+
+.account-type-select {
+
+    width: 100%;
+
+    height: 38px;
+
+    padding: 0 12px;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    color: #1f2937;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+
+}
+
+
+/*==========================================================
+    Focus
+==========================================================*/
+
+.account-type-select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/*==========================================================
+    Hover
+==========================================================*/
+
+.account-type-select:hover:not(:disabled) {
+
+    border-color: #9ca3af;
+
+}
+
+
+/*==========================================================
+    Disabled
+==========================================================*/
+
+.account-type-select:disabled {
+
+    background-color: #f3f4f6;
+
+    color: #6b7280;
+
+    cursor: not-allowed;
+
+    opacity: 1;
+
+}
+
+
+/*==========================================================
+    Options
+==========================================================*/
+
+.account-type-select option {
+
+    padding: 8px;
+
+    font-size: 14px;
+
+    color: #1f2937;
+
+    background-color: #ffffff;
+
+}
+
+
+
+
+/*==========================================================
+    Account Type Dropdown - Responsive
+==========================================================*/
+
+@media (max-width: 768px) {
+
+    .account-type-select {
+
+        width: 100%;
+
+        height: 38px;
+
+        font-size: 14px;
+
+        padding: 0 10px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .account-type-select {
+
+        width: 100%;
+
+        height: 40px;
+
+        font-size: 14px;
+
+        padding: 0 10px;
+
+        border-radius: 6px;
+
+    }
+
+}
