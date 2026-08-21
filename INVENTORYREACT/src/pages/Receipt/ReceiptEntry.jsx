@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./ReceiptEntry.css";
 
-import EditPasswordModal from "../../authentication/components/EditPasswordModal";
+import EditPasswordModal from "../../Authentication/components/EditPasswordModal";
 import {
   getParties,
   getAccounts,
