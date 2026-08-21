@@ -73,3 +73,9 @@ jobs:
           port: 21
           local-dir: ./backend-publish/
           server-dir: ./api/
+          dangerous-clean-slate: false
+          log-level: minimal
+          timeout: 60000
+          port: 21
+          local-dir: ./backend-publish/
+          server-dir: ./api/
