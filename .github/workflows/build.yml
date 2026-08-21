@@ -1,1 +1,53 @@
 
+name: Build GST Inventory Application
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-backend:
+    name: Build .NET 8 Backend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore backend
+        run: dotnet restore INVENTORYAPP-22e/INVENTORYAPP.sln
+
+      - name: Build backend
+        run: dotnet build INVENTORYAPP-22e/INVENTORYAPP.sln --configuration Release --no-restore
+
+  build-frontend:
+    name: Build React Frontend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: INVENTORYREACT/package-lock.json
+
+      - name: Install dependencies
+        working-directory: INVENTORYREACT
+        run: npm ci
+
+      - name: Build React
+        working-directory: INVENTORYREACT
+        run: npm run build
