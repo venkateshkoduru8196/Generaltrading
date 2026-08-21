@@ -1,0 +1,75 @@
+name: Deploy GST Inventory Application
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # -------------------------
+      # .NET 8 Backend
+      # -------------------------
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore Backend
+        run: dotnet restore INVENTORYAPP-22e/INVENTORYAPP.sln
+
+      - name: Publish Backend
+        run: dotnet publish INVENTORYAPP-22e/INVENTORYAPP/INVENTORYAPP.csproj -c Release -o backend-publish
+
+      # -------------------------
+      # React Frontend
+      # -------------------------
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: INVENTORYREACT/package-lock.json
+
+      - name: Install React dependencies
+        working-directory: INVENTORYREACT
+        run: npm ci
+
+      - name: Build React
+        working-directory: INVENTORYREACT
+        run: npm run build
+
+      # -------------------------
+      # Deploy React
+      # -------------------------
+      - name: Deploy React to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          local-dir: ./INVENTORYREACT/dist/
+          server-dir: ./
+
+      # -------------------------
+      # Deploy .NET Backend
+      # -------------------------
+      - name: Deploy Backend to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          local-dir: ./backend-publish/
+          server-dir: ./api/
